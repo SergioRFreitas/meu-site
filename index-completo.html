@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site do Sérgio</title>
+  <style>
+    body {
+      background-color: #240635;
+      font-family: Arial, sans-serif;
+      color: #f5f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #0077cc;
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    a {
+      color: #e8ee92;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #0077cc;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    ol {
+      list-style-type: decimal;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 2px;
+    }
+
+    .imagem-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .imagem-container img {
+      border: 2px solid #0077cc;
+      border-radius: 8px;
+    }
+
+    .imagem-container a {
+      display: block;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #cc0000;
+      text-decoration: underline;
+    }
+
+    .menu {
+      background-color: #0077cc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .menu a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .meu-botao {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+
+      .imagem-container img {
+        width: 100%;
+      }
+
+      ol {
+        padding-left: 10px;
+      }
+
+      li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="menu">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <h1>Olá, Sérgio, João, Christiane e Ester!</h1>
+  <h2>Meus Hobbies</h2>
+  <ol>
+    <li>Programar</li>
+    <li>Tocar violão</li>
+    <li>Jogar futebol</li>
+    <li>Ler livros</li>
+  </ol>
+
+  <p>Este é o início da sua jornada com HTML e CSS.</p>
+
+  <div class="imagem-container">
+    <img src="minha-foto.jpg" alt="Minha foto">
+    <a href="https://www.google.com" target="_blank">Visite o Google</a>
+    <button class="meu-botao">Clique aqui</button>
+  </div>
+
+  <script>
+    document.querySelector(".meu-botao").addEventListener("click", function() {
+      alert("Você clicou no botão! 👏");
+    });
+  </script>
+</body>
+</html>
